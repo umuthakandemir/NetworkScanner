@@ -1,7 +1,7 @@
-#Network Scanner
+# Network Scanner
 This project provides a simple network scanner application using Python and the scapy library. It scans the network for devices based on a given IP range entered through the command line and lists the IP and MAC addresses of active devices.
 
-##Features
+## Features
 Network scanning: Scans the network for devices using ARP requests in the specified IP range.
 Easy to use: Quickly perform a scan by entering the IP range via the command line.
 Requirements
@@ -13,14 +13,14 @@ To install the Scapy library:
 pip install scapy
 ```
 
-Usage
+## Usage
 You can run the script from the terminal or command line as follows:
 
 ```bash
 python network_scanner.py -r <IP_RANGE>
 ```
 
-##Example:
+## Example:
 
 ```bash
 python network_scanner.py -r 192.168.1.0/24
@@ -28,10 +28,10 @@ python network_scanner.py -r 192.168.1.0/24
 
 This command will scan for all devices in the 192.168.1.0/24 IP range.
 
-##Output
+## Output
 Upon completion of the scan, it will display the IP and MAC addresses of all detected devices.
 
-##Code Explanation
+## Code Explanation
 getSourceInfo: Used to get the IP range from the command line.
 requestFunction: Combines ARP and Ethernet packets to scan a specified IP range.
 run: Initiates the scanning process, obtains the IP range from the user, starts the scan, and displays the results.
