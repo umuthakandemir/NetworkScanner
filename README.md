@@ -31,6 +31,19 @@ This command will scan for all devices in the 192.168.1.0/24 IP range.
 ## Output
 Upon completion of the scan, it will display the IP and MAC addresses of all detected devices.
 
+## **LıKE:**
+```bash
+python scan.py -r 10.0.2.0/24                                                  
+Scanning Network. Please wait..
+Begin emission:
+Finished sending 256 packets.
+***
+Received 3 packets, got 3 answers, remaining 253 packets
+Ether / ARP who has 10.0.2.1 says 10.0.2.4 ==> Ether / ARP is at 52:54:00:12:35:00 says 10.0.2.1 / Padding
+Ether / ARP who has 10.0.2.2 says 10.0.2.4 ==> Ether / ARP is at 52:54:00:12:35:00 says 10.0.2.2 / Padding
+Ether / ARP who has 10.0.2.3 says 10.0.2.4 ==> Ether / ARP is at 08:00:27:f7:fc:e4 says 10.0.2.3 / Padding
+```
+
 ## Code Explanation
 getSourceInfo: Used to get the IP range from the command line.
 requestFunction: Combines ARP and Ethernet packets to scan a specified IP range.
